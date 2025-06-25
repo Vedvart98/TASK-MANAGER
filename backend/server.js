@@ -7,7 +7,7 @@ const authRoutes = require('./routes/Auth');
 const taskRoutes = require('./routes/tasks');
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.your_port_name || 5000;
 // middleware
 app.use(cors());
 app.use(express.json());
@@ -45,8 +45,8 @@ const startServer = async () => {
         await sequelize.sync({ force: false });
         console.log('Database synchronized');
 
-        app.listen(PORT, () => {
-            console.log(`server is listening on PORT http://localhost:${PORT}`);
+        app.listen(your_port_name, () => {
+            console.log(`server is listening on PORT http://localhost:${your_port_name}`);
         });
 
     } catch (error) {

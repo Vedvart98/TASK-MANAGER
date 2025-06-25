@@ -10,7 +10,7 @@ const auth = async(req,res,next)=>{
         }
 
         // verify token
-        const decoded = jwt.verify(token,process.env.JWT_SECRET);
+        const decoded = jwt.verify(token,process.env.your_super_secret_jwt_key);
     
         // get user from db
         const user = await User.findByPk(decoded.userId,{
