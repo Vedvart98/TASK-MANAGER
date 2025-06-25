@@ -1,2 +1,8 @@
+# Environment variables
 .env
-/node_modules
+.env.test
+.env.*.local
+
+node_modules
+# optional npm cache directory
+.npm/
