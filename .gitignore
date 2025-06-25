@@ -1,0 +1,20 @@
+# Root-level .gitignore
+
+# Ignore node_modules everywhere
+node_modules/
+
+# Ignore env files
+*.env
+
+# Ignore build artifacts
+dist/
+.vite/
+coverage/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
